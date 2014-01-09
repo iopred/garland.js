@@ -18,15 +18,15 @@
 
 var text = document.getElementById('item');
 var item = JSON.parse(text.textContent);
-item.basePath = "ChubbyPuppet/";
+item.basePath = "chubbypuppet/";
 
 text = document.getElementById('sword');
 var sword = JSON.parse(text.textContent);
-sword.basePath = "Sword/";
+sword.basePath = "sword/";
 
 text = document.getElementById('armor');
 var armor = JSON.parse(text.textContent);
-armor.basePath = "Armor/";
+armor.basePath = "armor/";
 
 var garland = new Garland("ChubbyPuppet", 24);
 document.body.appendChild(garland.getElement());
