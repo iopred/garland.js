@@ -302,6 +302,10 @@ Garland.prototype.removeItem = function(item) {
 };
 
 Garland.prototype.toggleItem = function(item) {
+  if (!item) {
+    return;
+  }
+
   var index = this.items.indexOf(item);
   if (index == -1) {
     this.items.push(item);
