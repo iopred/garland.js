@@ -3,7 +3,6 @@ var armor;
 var sword;
 
 var garland = new Garland("ChubbyPuppet", 24);
-document.getElementById("garland").appendChild(garland.getElement());
 
 garland.play("Idle");
 
