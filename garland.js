@@ -282,6 +282,10 @@ Garland.prototype.render = function() {
 // Public methods.
 
 Garland.prototype.addItem = function(item) {
+  if (!item) {
+    return;
+  }
+
   this.items.push(item);
 
   this.clearParts();
@@ -289,6 +293,10 @@ Garland.prototype.addItem = function(item) {
 };
 
 Garland.prototype.removeItem = function(item) {
+  if (!item) {
+    return;
+  }
+
   for (var i = 0; i < this.items.length; i++) {
     if (this.items[i] == item) {
       this.items.splice(i, 1);
