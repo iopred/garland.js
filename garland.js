@@ -133,15 +133,8 @@ Garland.prototype.getPartElement = function(partName, layer) {
   if (!this.renderedParts[partElementName]) {
     for (var i = 0; i < this.items.length; i++) {
       var item = this.items[i].parts;
-
-      var itemSrc = this.items[i].src;
-
-      var basePath = this.items[i].basePath;
-      if (basePath) {
-        basePath += "/";
-      } else {
-        basePath = "";
-      }
+      var itemSrc = item.src;
+      var basePath = item.basePath || "";
 
       var itemPart = item[partName];
       if (itemPart) {
