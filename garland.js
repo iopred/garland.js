@@ -26,6 +26,7 @@
 function Garland(id, frameRate) {
   this.element = document.createElement("div");
   this.element.id = id || "Garland" + this.__index__++;
+  this.element.style.position = "absolute";
 
   this.items = [];
 
